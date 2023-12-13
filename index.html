@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="home">
+
+<!-- Navigation Bar -->
+<nav>
+    <div class="logo">
+        <a href="index.html"><img src="logoo.png" alt="logo"></a>
+    </div>
+    <a href="index.html">Home</a>
+    <a href="aboutme.html">About</a>
+    <a href="family.html">Family</a>
+    <a href="friends.html">Friends</a>
+    <a href="education.html">Education</a>
+    <a href="hobby.html">Hobby</a>
+    <div class="dropdown">
+        <button class="dropbtn">Favourite</button>
+        <div class="dropdown-content">
+           <a href="song.html">Songs</a>
+            <a href="movie.html">Movies</a>
+            <a href="place.html">Places</a>
+            <a href="anime.html">Anime</a>
+        </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</nav>
+<section id="home">
+<div class="text-box">
+<br>
+<br>
+<br>
+<br>
+    <center><h1>Welcome to My Personal Website</h1>
+    <p>Hello! This is Aida, and welcome to my personal website. You can learn all about me in this website by simply clicking the buttons available.<br> You are welcome to watch the video down below to know more about this website.</p>
+<a href="intro.mp4" class="hero-btn">video here</a></center>
+
+</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<table class="table1">
+    <thead>
+        <tr>
+            <th><div class="container">
+<div class="flip-box left">
+        <div class="flip-box-inner">
+            <div class="flip-box-front">
+                <img src="aida.jpg" alt="Image">
+            </div>
+            <div class="flip-box-back">
+                <center><p><em>It's never too late than never</em></p><center>
+            </div>
+        </div>
+    </div></th>
+            <td><div class="text-container">
+<font color="white"><h8>My name is Nursuhaida Binti Rohaizam!<br> I am a full time student and currently doing my diploma in UiTM Merbok</h8> <br><br>
+<h7>Education is important because it equips individuals with knowledge, skills, and critical thinking abilities, enabling personal development and contributing to societal progress.Even though I'm a bit late, it's better than never start at all. Let's follow my journey!</h7></font>
+</section>
+<section></td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><div class="container">
+<div class="flip-box left">
+        <div class="flip-box-inner">
+            <div class="flip-box-front">
+                <img src="sibs.jpg" alt="Image">
+            </div>
+            <div class="flip-box-back">
+                <center><p><em>Family is the heart of a home</em></p><center>
+            </div>
+        </div>
+    </div></td>
+            <td><div class="text-container">
+<font color="white"><h8>My name is Nursuhaida Binti Rohaizam!<br> I am a full time student and currently doing my diploma in UiTM Merbok</h8> <br><br>
+<h7>Education is important because it equips individuals with knowledge, skills, and critical thinking abilities, enabling personal development and contributing to societal progress.Even though I'm a bit late, it's better than never start at all. Let's follow my journey!</h7></td></font>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><div class="container">
+<div class="flip-box left">
+        <div class="flip-box-inner">
+            <div class="flip-box-front">
+                <img src="code.jpg" alt="Image">
+            </div>
+            <div class="flip-box-back">
+                <center><p><em>Success is dependent on effort</em></p><center>
+            </div>
+        </div>
+    </div></td>
+<td><div class="text-container">
+            <font color="white"><h8>Make every effort matter, and always make the following effort better than last one </h8> <br><br>
+<h7>Progress is important, even though only a little, a progress is a progress. At least you did something. However, do consider if your progress is enough</h7></td></font>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+</section>
+<audio controls autoplay loop>
+    <source src="pasilyo.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+</audio>
+<br>
+<a href="#top" class="top-link">
+    <img src="top.png" alt="Scroll to Top"></a>
+<br>
+<footer>
+  <p>&copy; 2023 My Personal Website. All rights reserved. | Designed by Nursuhaida Rohaizam</p>
+</footer>
+
+<script>
+    // Toggle the navigation bar on small screens
+    function myFunction() {
+        var x = document.getElementsByTagName("nav")[0];
+        if (x.className === "") {
+            x.className = "responsive";
+        } else {
+            x.className = "";
+        }
+    }
+      // JavaScript for smooth scrolling
+    document.querySelector('.top-link').addEventListener('click', function (e) {
+        e.preventDefault();
+
+        // Scroll to the top of the page with smooth behavior
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+
+</script>
+</body>
+</html>
+

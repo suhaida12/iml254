@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="song">
+
+<!-- Navigation Bar -->
+<nav>
+    <div class="logo">
+        <a href="index.html"><img src="logoo.png" alt="logo"></a>
+    </div>
+    <a href="index.html">Home</a>
+    <a href="aboutme.html">About</a>
+    <a href="family.html">Family</a>
+    <a href="friends.html">Friends</a>
+    <a href="education.html">Education</a>
+    <a href="hobby.html">Hobby</a>
+    <div class="dropdown">
+        <button class="dropbtn">Favourite</button>
+        <div class="dropdown-content">
+           <a href="song.html">Songs</a>
+            <a href="movie.html">Movies</a>
+            <a href="place.html">Places</a>
+            <a href="anime.html">Anime</a>
+        </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</nav>
+<section id="song">
+ <h1><font size="38">My Favorite Songs</font></h1>
+<br>
+<br>
+<div class="tablet">
+    <div class="content">
+        <h2>Top 10 Songs Playlist</h2>
+        <ul class="playlist">
+             <li>
+                <img class="song-image" src="rini.jpg" alt="Song 1 Image">
+                <audio controls><source src="myfavclothes.mp3" type="audio/mp3"></audio>
+                <h7>My Favourite Clothes - RINI</h7>
+            </li>
+            <li>
+                <img class="song-image" src="forever.jpg" alt="Song 2 Image">
+                <audio controls><source src="forever.mp3" type="audio/mp3"></audio>
+                <h7>Forever - Rei Brown</h7>
+            </li>
+            <li>
+                <img class="song-image" src="fern.jpg" alt="Song 3 Image">
+                <audio controls><source src="lie2me.mp3" type="audio/mp3"></audio>
+                <h7>Lie 2 Me - Fern</h7>
+            </li>
+            <li>
+                <img class="song-image" src="clairo.jpg" alt="Song 4 Image">
+                <audio controls><source src="hotcheetos.mp3" type="audio/mp3"></audio>
+                <h7>Flaming Hot Cheetos - Clairo</h7>
+            </li>
+            <li>
+                <img class="song-image" src="yours.jpg" alt="Song 5 Image">
+                 <audio controls><source src="yours.mp3" type="audio/mp3"></audio>
+                <h7>I Wanna Be Yours - Arctic Monkeys</h7>
+            </li>
+            <li>
+                <img class="song-image" src="dance.jpg" alt="Song 6 Image">
+                 <audio controls><source src="dancewithme.mp3" type="audio/mp3"></audio>
+                <h7>Dance With Me - Blackbeans</h7>
+            </li>
+            <li>
+                <img class="song-image" src="wish.jpg" alt="Song 7 Image">
+                 <audio controls><source src="wish.mp3" type="audio/mp3"></audio>
+                <h7>Wish - Blackbeans</h7>
+            </li>
+            <li>
+                <img class="song-image" src="lavender.jpg" alt="Song 8 Image">
+                 <audio controls><source src="lavender.mp3" type="audio/mp3"></audio>
+                <h7>Lavender(ลาเวนเดอร์) - Patrickananda</h7>
+            </li>
+            <li>
+                <img class="song-image" src="mirr.jpg" alt="Song 9 Image">
+                 <audio controls><source src="mirrr.mp3" type="audio/mp3"></audio>
+                <h7>Nicotine(นิโคติน) - Mirrr</h7>
+            </li>
+            <li>
+                <img class="song-image" src="keshi.png" alt="Song 10 Image">
+                 <audio controls><source src="somebody.mp3" type="audio/mp3"></audio>
+                <h7>Somebody - Keshi</h7>
+</li>
+        </ul>
+    </div>
+</div>
+</section>
+<a href="#top" class="top-link">
+    <img src="top.png" alt="Scroll to Top"></a>
+<br>
+<footer>
+  <p>&copy; 2023 My Personal Website. All rights reserved. | Designed by Nursuhaida Rohaizam</p>
+</footer>
+
+<script>
+    // Toggle the navigation bar on small screens
+    function myFunction() {
+        var x = document.getElementsByTagName("nav")[0];
+        if (x.className === "") {
+            x.className = "responsive";
+        } else {
+            x.className = "";
+        }
+    }
+ // JavaScript for smooth scrolling
+    document.querySelector('.top-link').addEventListener('click', function (e) {
+        e.preventDefault();
+
+        // Scroll to the top of the page with smooth behavior
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+
+</script>
+</body>
+</html>

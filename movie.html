@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="song">
+
+<!-- Navigation Bar -->
+<nav>
+    <div class="logo">
+        <a href="index.html"><img src="logoo.png" alt="logo"></a>
+    </div>
+    <a href="index.html">Home</a>
+    <a href="aboutme.html">About</a>
+    <a href="family.html">Family</a>
+    <a href="friends.html">Friends</a>
+    <a href="education.html">Education</a>
+    <a href="hobby.html">Hobby</a>
+    <div class="dropdown">
+        <button class="dropbtn">Favourite</button>
+        <div class="dropdown-content">
+           <a href="song.html">Songs</a>
+            <a href="movie.html">Movies</a>
+            <a href="place.html">Places</a>
+            <a href="anime.html">Anime</a>
+        </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</nav>
+<section id="movie">
+ <h1><font size="38">My Favorite Movies</font></h1>
+<br>
+<center>
+<div class="card">
+    <a href="https://youtu.be/C0BMx-qxsP4?si=HDIUG5uXkavhFKaX" target="_blank"><img src="john.jpg" alt="Movie 1"></a>
+    <div class="card-content">
+        <h4 class="card-title">John Wick</h4>
+        <p class="card-description">Genre: Action, Crime, Thriller<br> Starring: Keanu Reeves,Michael Nyqvist,Alfie Allen<br>Year: 2014<br> Duration: 1hr 41m<br> Rating: 8/10</p>
+    </div>
+</div>
+<br>
+<div class="card">
+<a href="https://youtu.be/aeVkbNka9HM?si=xBI4M8waMJ-qOXx1" target="_blank"><img src="white.jpg" alt="Movie 2"></a>
+    <div class="card-content">
+        <h4 class="card-title">White Chicks</h4>
+        <p class="card-description">Genre: Comedy, Crime<br> Starring: Shawn Wayans, Marlon Wayans<br> Year: 2004<br> Duration: 1hr 49m<br>Rating: 10/10</p>
+    </div>
+</div>
+<br>
+<div class="card">
+<a href="https://youtu.be/kg_jH47u480?si=TS8d1D0akkiFjPun" target="_blank"><img src="armageddon.jpg" alt="Movie 3"></a>
+    <div class="card-content">
+        <h4 class="card-title">Armageddon</h4>
+        <p class="card-description">Genre: Action, Adventure, Sci-Fi<br> Starring: Bruce Willis, Billy Bob Thornton, Ben Affleck, Steve Buscemi<br> Year: 1998<br> Duration: 2hr 31m<br>Rating: 8/10</p>
+    </div>
+</div>
+<br>
+<div class="card">
+<a href="https://youtu.be/TcMBFSGVi1c?si=h2fDzrxEeRjFpvjb" target="_blank"><img src="endgame.jpeg" alt="Movie 4"></a>
+    <div class="card-content">
+        <h4 class="card-title">Avengers: Endgame</h4>
+        <p class="card-description">Genre: Action, Adventure, Drama<br> Starring: Robert Downey Jr., Chris Evans, Mark Ruffalo<br> Year: 2019<br> Duration: 3hr 1m<br>Rating: 9/10</p>
+    </div>
+</div>
+<br>
+<div class="card">
+<a href="https://youtu.be/TcMBFSGVi1c?si=h2fDzrxEeRjFpvjb" target="_blank"><img src="deathcure.jpg" alt="Movie 5"></a>
+    <div class="card-content">
+        <h4 class="card-title">Maze Runner: The Death Cure</h4>
+        <p class="card-description">Genre: Action, Adventure, Sci-Fi<br> Starring: Dylan O'Brien, Thomas Brodie Sangster, Ki Hong Lee<br> Year: 2018<br> Duration: 2hr 23m<br>Rating: 9/10</p>
+    </div>
+</div>
+</center>
+</section>
+<a href="#top" class="top-link">
+    <img src="top.png" alt="Scroll to Top"></a>
+<br>
+<footer>
+  <p>&copy; 2023 My Personal Website. All rights reserved. | Designed by Nursuhaida Rohaizam</p>
+</footer>
+<script>
+    // Toggle the navigation bar on small screens
+    function myFunction() {
+        var x = document.getElementsByTagName("nav")[0];
+        if (x.className === "") {
+            x.className = "responsive";
+        } else {
+            x.className = "";
+        }
+    }
+ // JavaScript for smooth scrolling
+    document.querySelector('.top-link').addEventListener('click', function (e) {
+        e.preventDefault();
+
+        // Scroll to the top of the page with smooth behavior
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+</script>
+</body>
+</html>
